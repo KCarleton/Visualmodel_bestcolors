@@ -8,3 +8,7 @@ Program inputs and outputs:
 4. The noise values are taken to be 0.1 for the long wavelength cone and the other cones are weighted by their relative abundance. Since cichlids have square retinal mosaics, this means that S:M:L ratios are 1:2:2. Therefore noise values are 0.14:0.1:0.1.
 5. The program calculates a matrix of JND values for all pairwise color combinations for two different illuminants and outputs two files if save2file = "Y".
 6. The program can also generate several different plots including plots of the reflective colors (R), the visual pigments (V), the visual pigments and illuminant light (VL), reflectance and light (RL) and plotting the colors in the SHort Medium Long visual space triangle (T). Finally, having determined the best color pair, you canplot those two color reflectances times the illuminant and compare it to the visual pigments * lens transmission (Best).
+
+The code is composed of two parts:
+1. AquaVis_Acalliptera: The functions used to calculate different elements such as the Gaussian colors, the visual pigments, quantum catch and JNDs
+2. VisualModel_Acalliptera: The code that sets the parameters and calls the functions to do the calculations.
