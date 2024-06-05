@@ -153,6 +153,10 @@ illum_name2<-"Massoko_Deep"
   Lymax<-1
   color4<-"black"
 
+# For "Best" plot, need to tell it which column of reflect has best colors, e.g. peak 402 (reflect [,28]) and step 572 (reflect [,198])
+    bestpeakNo<-28
+    beststepNo<-198
+
 #  Choose type of plot
   which_plot<-"Best"   
  
@@ -360,9 +364,6 @@ illum_name2<-"Massoko_Deep"
       lines(VP[,1], VP[,k]*lens_trans[,2], type="l", col=VP_color[k-1])
       axis(side=2, ylim=c(0,1))
     }
-    # Need to tell it which column of reflect has best colors, e.g. peak 402 (reflect [,28]) and step 572 (reflect [,198])
-    bestpeakNo<-28
-    beststepNo<-198
     par(new=T)
     plot(waves, reflect[,1], type="n", axes=FALSE, xlab="Wavelength", xlim=c(Rxmin, Rxmax), ylab="", ylim=c(0,1), cex=0.7)
     lines(waves, reflect[,bestpeakNo]*illum1[,2], type="l", col="cyan", lty=2, lwd=2)
