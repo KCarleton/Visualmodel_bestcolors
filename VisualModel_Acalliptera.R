@@ -12,7 +12,7 @@
 # Receptor Noise Limited model to determine the Just Noticeable Differences (JNDs)
 # between those colors to determine which color combos are most discriminable
 #  see Vorobyev and Osorio 1998 for RNL and Champ et al 2016
-# Functions are contained in the separate file AquaVis_Massoko.R
+# Functions are contained in the separate file AquaVis_Acalliptera.R and should be loaded first
 #   
 # Inputs:
 #   Light spectra for Massoko shallow and deep, binned to 1 nm resolution with Binning_spectra.R
